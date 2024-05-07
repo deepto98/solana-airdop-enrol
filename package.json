@@ -3,13 +3,24 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "keygen": "ts-node ./keygen.ts",
+    "airdrop": "ts-node ./airdrop.ts",
+    "transfer": "ts-node ./transfer.ts",
+    "empty": "ts-node ./empty.ts",
+    "enroll": "ts-node ./enroll.ts",
+    "cli": "ts-node ./cli.ts"
+  },
   "dependencies": {
+    "@coral-xyz/anchor": "^0.30.0",
     "@solana/web3.js": "^1.91.8",
     "@types/node": "^20.12.10",
     "bs58": "^5.0.0",
+    "prompt-sync": "^4.2.0",
     "typescript": "^5.4.5"
   },
   "devDependencies": {
+    "@types/prompt-sync": "^4.2.3",
     "ts-node": "^10.9.2"
   }
 }
